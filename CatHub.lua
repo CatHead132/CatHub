@@ -60,7 +60,7 @@ end)
 local Tab = Window:NewTab("Customize")
 local CustomizeSection = Tab:NewSection("Customize")
 for theme, color in pairs(themes) do
-    CustomizeSection:NewColorPicker(theme, "Change your "..theme, color, function(color3)
+    customizeSection:NewColorPicker(theme, "Change your "..theme, color, function(color3)
         Library:ChangeColor(theme, color3)
     end)
 end
