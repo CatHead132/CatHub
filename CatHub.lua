@@ -1,4 +1,4 @@
---[[Made By Cat Head#2046]]--
+--[[Made By Cat Head#2046 Discord]]--
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Cat Hub | Made By Cat Head#2046", "DarkTheme")
 local Tab = Window:NewTab("Local Player")
