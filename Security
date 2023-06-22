@@ -5,6 +5,7 @@ local validNames = { "lYESIL", "abcdefyou210", "Ejderkafai_YT" }
 
 for _, name in ipairs(validNames) do
     if PlayerName == name then
+            print("Name is on the list")
             loadstring(game:HttpGet('https://raw.githubusercontent.com/CatHead132/CatHub/main/CatHub.lua'))()
         break
     end
