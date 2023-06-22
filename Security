@@ -1,0 +1,11 @@
+local PlayerName = game.Players.LocalPlayer.Name
+print(PlayerName)
+
+local validNames = { "lYESIL", "abcdefyou210", "Ejderkafai_YT" }
+
+for _, name in ipairs(validNames) do
+    if PlayerName == name then
+            
+        break
+    end
+end
