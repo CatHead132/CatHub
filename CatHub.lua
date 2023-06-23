@@ -1,18 +1,10 @@
-Jump = 0
-Speed = 0
+
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Cat Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "CatHub_Config"})
 local Tab = Window:MakeTab({
 	Name = "Home",
 	Icon = "home",
 	PremiumOnly = false
-})
-Tab:AddToggle({
-	Name = "Enable Walkspeed",
-	Default = false,
-	Callback = function(Value)
-		Jump = 1
-	end    
 })
 Tab:AddSlider({
 	Name = "Walk Speed",
@@ -23,9 +15,7 @@ Tab:AddSlider({
 	Increment = 16,
 	ValueName = "",
 	Callback = function(s)
-			if Jump == 1 then
-				game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
-			end
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 	end    
 })
 Tab:AddSlider({
