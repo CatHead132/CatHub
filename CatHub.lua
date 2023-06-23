@@ -200,6 +200,18 @@ Tab:AddButton({
        loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/OwlHub.txt"))()
   	end    
 })
+Tab:AddButton({
+	Name = "Control",
+	Callback = function()
+        OrionLib:MakeNotification({
+	Name = "Executing",
+	Content = "It may not take a while",
+	Image = "info",
+	Time = 5
+})
+       loadstring(game:HttpGet('https://raw.githubusercontent.com/voidy434343/Control-shit/main/Control%20moonsec1.txt'))() 
+  	end    
+})
 local Tab = Window:MakeTab({
 	Name = "Creator",
 	Icon = "info",
