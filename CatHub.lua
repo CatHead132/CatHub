@@ -31,6 +31,12 @@ Tab:AddSlider({
 	end    
 })
 Tab:AddButton({
+	Name = "Kill Local Player",
+	Callback = function()
+      		game.Players.LocalPlayer.character.Humanoid.Health = 0
+  	end    
+})
+Tab:AddButton({
 	Name = "Destroy Ui",
 	Callback = function()
       		OrionLib:Destroy()
