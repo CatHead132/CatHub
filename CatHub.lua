@@ -220,15 +220,12 @@ Tab:AddButton({
   	end    
 })
 local Section = Tab:AddSection({
-	Name = "Join with JobId"
-})
-local Section = Tab:AddSection({
     Name = "Join with JobId"
 })
 Tab:AddTextbox({
     Name = "JobId",
     Default = "Enter JobId",
-    TextDisappear = true
+    TextDisappear = false
 })
 
 Tab:AddButton({
