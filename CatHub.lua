@@ -222,13 +222,16 @@ Tab:AddButton({
 local Section = Tab:AddSection({
 	Name = "Join with JobId"
 })
-Tab:AddTextbox({
-	Name = "JobId",
-	Default = "Enter JobId",
-	TextDisappear = true,
-	Callback = function(JobId)	  
+local Section = Tab:AddSection({
+    Name = "Join with JobId"
 })
-	Tab:AddButton({
+Tab:AddTextbox({
+    Name = "JobId",
+    Default = "Enter JobId",
+    TextDisappear = true
+})
+
+Tab:AddButton({
     Name = "Teleport",
     Callback = function()
         local Players = game:GetService("Players")
@@ -244,7 +247,6 @@ Tab:AddTextbox({
         end
     end
 })
-
 local Tab = Window:MakeTab({
 	Name = "Creator",
 	Icon = "info",
