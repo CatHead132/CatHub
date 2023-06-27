@@ -219,6 +219,32 @@ Tab:AddButton({
        loadstring(game:HttpGet('https://raw.githubusercontent.com/voidy434343/Control-shit/main/Control.txt'))() 
   	end    
 })
+local Section = Tab:AddSection({
+	Name = "Join with JobId"
+})
+Tab:AddTextbox({
+	Name = "JobId",
+	Default = "Enter JobId",
+	TextDisappear = true,
+	Callback = function(JobId)	  
+})
+	Tab:AddButton({
+    Name = "Teleport",
+    Callback = function()
+        local Players = game:GetService("Players")
+        local TeleService = game:GetService("TeleportService")
+        local player = Players.LocalPlayer
+        local jobId = Tab:GetTextboxValue("JobId")
+        
+        if player and jobId then
+            local placeId = game.PlaceId
+            TeleService:TeleportToPlaceInstance(placeId, jobId, player)
+        else
+            print("LocalPlayer is not found or JobId is not entered.")
+        end
+    end
+})
+
 local Tab = Window:MakeTab({
 	Name = "Creator",
 	Icon = "info",
