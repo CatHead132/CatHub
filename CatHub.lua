@@ -223,9 +223,13 @@ local Section = Tab:AddSection({
     Name = "Join with JobId"
 })
 Tab:AddTextbox({
-    Name = "JobId",
-    Default = "Enter JobId",
-    TextDisappear = false
+	Name = "JobId",
+	Default = "Enter JobId",
+	TextDisappear = false,
+	Callback = function(Value)
+		print(Value)
+		jobId = (Value)
+	end	  
 })
 
 Tab:AddButton({
@@ -234,7 +238,6 @@ Tab:AddButton({
         local Players = game:GetService("Players")
         local TeleService = game:GetService("TeleportService")
         local player = Players.LocalPlayer
-        local jobId = Tab:GetTextboxValue("JobId")
         
         if player and jobId then
             local placeId = game.PlaceId
