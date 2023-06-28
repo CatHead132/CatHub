@@ -1,4 +1,4 @@
-
+v
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Cat Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "CatHub_Config"})
 local Tab = Window:MakeTab({
@@ -216,7 +216,7 @@ Tab:AddButton({
 	Image = "info",
 	Time = 5
 })
-       loadstring(game:HttpGet('https://raw.githubusercontent.com/voidy434343/Control-shit/main/Control.txt'))() 
+       loadstring(game:HttpGet('https://raw.githubusercontent.com/voidy434343/Control-shit/main/ooooiiiioooooiiii2.txt'))() 
   	end    
 })
 local Section = Tab:AddSection({
