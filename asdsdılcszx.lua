@@ -36,7 +36,7 @@ while true do
     end
   end
 
-  game.Lighting.Technology = Enum.Technology.Compatibility
+
 
   wait(1) -- Add a short delay to avoid excessive CPU usage
 end
