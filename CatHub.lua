@@ -240,7 +240,7 @@ Tab:AddButton({
             Image = "info",
             Time = 5
         })
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/voidy434343/Control-shit/main/ooooiiiioooooiiii2.txt'))() 
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/voidy434343/Control-shit/main/Control.txt'))() 
     end    
 })
 
