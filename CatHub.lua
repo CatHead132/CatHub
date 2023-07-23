@@ -79,6 +79,40 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
+    Name = "Eaclipse",
+    Callback = function()
+        OrionLib:MakeNotification({
+            Name = "Executing",
+            Content = "It may take a while",
+            Image = "info",
+            Time = 5
+        })
+            getgenv().mainKey = "nil"
+        local a, b, c, d, e = loadstring, request or http_request or (http and http.request) or (syn and syn.request), assert, tostring, "https://api.eclipsehub.xyz/auth"
+        c(a and b, "Executor not Supported")
+        a(b({
+            Url = e .. "\?\107e\121\61" .. d(mainKey),
+            Headers = {
+                ["User-Agent"] = "Eclipse"
+            }
+        }).Body)()
+    end    
+})
+
+Tab:AddButton({
+    Name = "Dot",
+    Callback = function()
+        OrionLib:MakeNotification({
+            Name = "Executing",
+            Content = "It may take a while",
+            Image = "info",
+            Time = 5
+        })
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/CatHead132/CatHub/main/Dot.lua", true))()
+    end    
+})
+
+Tab:AddButton({
     Name = "Strung mın simulitir",
     Callback = function()
         OrionLib:MakeNotification({
@@ -142,28 +176,7 @@ Tab:AddButton({
         loadstring(game:HttpGet("https://raw.githubusercontent.com/tip52/Leo-hub/main/loader.lua"))()
     end    
 })
-
-Tab:AddButton({
-    Name = "Eaclipse",
-    Callback = function()
-        OrionLib:MakeNotification({
-            Name = "Executing",
-            Content = "It may take a while",
-            Image = "info",
-            Time = 5
-        })
-        getgenv().mainKey = "nil"
-        local a, b, c, d, e = loadstring, request or http_request or (http and http.request) or (syn and syn.request), assert, tostring, "https://api.eclipsehub.xyz/auth"
-        c(a and b, "Executor not Supported")
-        a(b({
-            Url = e .. "\?\107e\121\61" .. d(mainKey),
-            Headers = {
-                ["User-Agent"] = "Eclipse"
-            }
-        }).Body)()
-    end    
-})
-
+            
 Tab:AddButton({
     Name = "JailBreak",
     Callback = function()
