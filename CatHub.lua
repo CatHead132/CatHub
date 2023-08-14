@@ -206,19 +206,6 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-    Name = "Driving Empire",
-    Callback = function()
-        OrionLib:MakeNotification({
-            Name = "Executing",
-            Content = "It may take a while",
-            Image = "info",
-            Time = 5
-        })
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/GodXNation/GodXNation/main/midnight%20racing%20hubV2%20fixed", true))()
-    end    
-})
-
-Tab:AddButton({
     Name = "Bedwars",
     Callback = function()
         OrionLib:MakeNotification({
