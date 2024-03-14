@@ -139,19 +139,6 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-    Name = "Arsenal",
-    Callback = function()
-        OrionLib:MakeNotification({
-            Name = "Executing",
-            Content = "It may take a while",
-            Image = "info",
-            Time = 5
-        })
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/PWNERHUB.lua"))()
-    end    
-})
-
-Tab:AddButton({
     Name = "Fling Things And People",
     Callback = function()
         OrionLib:MakeNotification({
@@ -232,7 +219,7 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-    Name = "Control",
+    Name = "Butter hub",
     Callback = function()
         OrionLib:MakeNotification({
             Name = "Executing",
@@ -240,7 +227,7 @@ Tab:AddButton({
             Image = "info",
             Time = 5
         })
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/voidy434343/Control-shit/main/Control%20(3).txt'))() 
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Butterisgood/Butter/main/Root2.lua'))("")
     end    
 })
 
